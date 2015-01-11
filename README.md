@@ -9,16 +9,11 @@ Create file config.py from config.py.dist
 Add your settings in config.py
 
 ## Launching
-For text file:
+Command line:
 ```
-  python export.py text
+  python qt_export.py some_word
 ```
-For kindle:
+Command for hotkey alias in your DE:
 ```
-  python export.py kindle
-```
-
-Сleaning Kindle dictionary:
-```
-python truncate.py
+  xsel -o | xargs /path/to/lingualeo.export/qt_export.py
 ```

@@ -34,11 +34,10 @@ class Lingualeo:
 
         try:
             result = self.get_content(url, {})
-            translate = result["translate"][0]
+            translate = result["translate"]
             return {
-                "is_exist": translate["is_user"],
                 "word": word,
-                "tword": translate["value"].encode("utf-8")
+                "twords": [[s["value"].encode("utf-8"), s["is_user"]] for s in translate]
             }
         except Exception as e:
             return e.message
