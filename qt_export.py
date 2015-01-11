@@ -4,9 +4,9 @@
 import config
 import service
 import sys
-import json
-from PyQt4.QtCore import SIGNAL, Qt, QObject
-from PyQt4.QtGui import QMainWindow, QApplication, QLabel, QPushButton, QWidget, QVBoxLayout, QGridLayout, QGroupBox, QRadioButton, QSizePolicy, QFrame, QMenu
+from PyQt4.QtCore import SIGNAL, QObject
+from PyQt4.QtGui import QPushButton, QGroupBox, QRadioButton
+from PyQt4.QtGui import QMainWindow, QApplication, QWidget, QVBoxLayout
 
 
 class AppWindow(QMainWindow):
